@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOY PLAZA</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+ 
+    <!-- Custom CSS -->
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #262626;
+        }
+        .movie-card {
+            margin: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-caption{
+            padding-bottom:5% ;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container"><center>
+            <h1 class="titleName bg-dark text-white" style="font-size: 80px;">
+                <img class="logo" src="logo.png" alt="logo" width="100" height="100"> Toy Plaza
+            </h1></center>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container">
+                <!-- Button for mobile and tablet views -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: 50px;" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: 50px;" href="#">Latest Toys</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: 50px;" href="#">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: 50px;" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-size: 50px;" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- New Arrivals Carousel -->
+    <section id="newArrivals" class="container mt-4">
+        <h1><mark>New Arrivals</mark></h1>
+        <p>Watch the latest trailers and clips from the internet.</p>
+        <div id="videoCarousel" class="carousel slide" data-ride="carousel" data-interval="20000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <video autoplay  muted loop controls style="width: 70%;">
+                            <source src="video nerf (2).mp4" type="video/mp4" >
+                            Your browser does not support the video tag.
+                        </video>
+                       <br></br>
+                        <div class="carousel-caption">
+                            <h3 data-title="Video Title 1">Lego Builders</h3>
+                            <p data-description="Description for Video 1">The LEGO Group’s mission is to inspire and develop the builders of tomorrow. The company believes that play is essential to children’s growth and development and that it can stimulate creativity, imagination, and learning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <video autoplay muted loop controls style="width: 70%;">
+                            <source src="video nerf (1).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="carousel-caption">
+                            <h3 data-title="Video Title 2">Nerf Action Guns </h3>
+                            <p data-description="Description for Video 1">Nerf is a brand of toy guns that are designed for children. They are known for their foam darts and blasters that shoot them. You can find a wide range of Nerf guns on various online shopping platforms such as Flipkart and FunCorp </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <video autoplay muted loop controls style="width: 70%;">
+                            <source src="video nerf (3).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="carousel-caption">
+                            <h3 data-title="Video Title 3">Barbie</h3>
+                            <p data-description="Description for Video 3">Barbie is a fashion doll created by American businesswoman Ruth Handler and manufactured by American toy company Mattel 1. The doll was launched in 1959 and has since become a cultural icon, representing a standard of beauty and femininity 1. Barbie has been the subject of numerous controversies over the years, including criticism for promoting unrealistic body standards and gender stereotypes  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section class="ftco-section ftco-wrap-about">
+        <div class="review container">
+            <div class="row">
+                <div class="col-md-5 wrap-about pt-5 pt-md-5 pb-md-3 ftco-animate fadeInUp ftco-animated">
+                    <div class="heading-section mb-4 my-5 my-md-0">
+                        <span class="subheading text-white">About</span>
+                        <h2 class="mb-4 display-1 text-white">Toy Plaza</h2>
+                    </div>
+                    <p><span class="highlight text-white">Toy Plaza is a well-regarded destination for all things related to toys, catering to kids and toy collectors alike. Our dedicated team of toy aficionados and experts provides an exciting and comprehensive viewpoint on a wide range of toys, from popular franchises to rare collectibles. Explore the world of play with Toy Plaza and discover the joy and fascination that toys bring to people of all ages.</span></p>
+                    <p><span class="highlight text-white">What sets apart is Toy Plaza its commitment to providing more than just standard Toys for improvement of creativity.</span></p>
+                </div>
+    
+                <div class="mvimg col-md-7 d-flex align-items-end justify-content-end">
+                    <img src="logo.png" class="rounded-circle" style="max-width: 600px;">
+                </div>
+            </div>
+        </div>
+    </section>     
+</main>
+</head>
+<body> 
+    <div class="container container-style mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h1 style="color:whitesmoke;">Select a Toy Category :</h1>
+                <div class="form-group">
+                    <select id="genreSelect" class="form-control">
+                        <option value="horror">Action Cars</option>
+                        <option value="comedy">Action Figures</option>
+                        <option value="action">Stuffed toys</option>
+                        <option value="telugu">Board Games</option>
+                        <option value="hindi">Puzzles</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary" onclick="navigateToSelectedGenre()">Go</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Include Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+    function navigateToSelectedGenre() {
+        const genreSelect = document.getElementById("genreSelect");
+        const selectedGenre = genreSelect.value;
+
+        switch (selectedGenre) {
+            case "horror":
+                window.location.href = "https://www.amazon.in/s?k=cars+toy+toys&adgrpid=1328211653895102&hvadid=83013487482738&hvbmt=bp&hvdev=c&hvlocphy=156041&hvnetw=o&hvqmt=p&hvtargid=";
+                break;
+            case "comedy":
+                window.location.href = "https://www.superherotoystore.com/collections/action-figures";
+                break;
+            case "action":
+                window.location.href = "https://www.flipkart.com/toys/stuffed-toy~brand/pr?sid=tng";
+                break;
+            case "telugu":
+                window.location.href = "https://www.amazon.in/s?k=board+games&adgrpid=1317216535688756&hvadid=82326291780186&hvbmt=be&hvdev=c&hvlocphy=157906&hvnetw=o&hvqmt=e&hvtargid=kwd-82326911606922%3Aloc-90&hydadcr=3010_2123060&tag=msndeskstdin-21&ref=pd_sl_3q5bxcvalk_e";
+                break;
+            case "hindi":
+                window.location.href = "https://www.amazon.in/s?k=puzle+game&adgrpid=1320515071069543&hvadid=82532450909832&hvbmt=bp&hvdev=c&hvlocphy=157906&hvnetw=o&hvqmt=p&hvtargid=kwd-82533067122116%3Aloc-90&hydadcr=2885_1936215&tag=msndeskstdin-21&ref=pd_sl_7uyekzwy65_p";
+                break;
+            default:
+                // Handle the default case or show an error message
+                break;
+        }
+    }
+</script>
+<!-- Top Movie Reviews -->
+<section class="container mt-4">
+    <h1><mark>Top Toys </mark></h1>
+    <div class="row">
+        <!-- Movie Review 1 (Action) -->
+        <div class="col-md-4">
+            <div class="movie-card">
+                <img src="bey blade.jpeg" alt="Movie 1 Poster" class="img-fluid equal-height-image">
+                <h3>BeyBlade</h3>
+                <p>
+                    Beyblade is a popular and thrilling spinning top battle game and anime franchise that has captured the hearts of fans around the world. With a passionate community of Beyblade enthusiasts and seasoned bladers, </p>
+                <a href="movie1review.html" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+
+        <!-- Movie Review 2 (Fantasy) -->
+        <div class="col-md-4">
+            <div class="movie-card">
+                <img src="lego image.jpeg" height="700px" alt="Movie 2 Poster"  class="img-fluid equal-height-image">
+                <h3>Lego Toys</h3>
+                <p>Lego, a beloved and iconic brand, is a source of endless creativity and building adventures. At Lego Enthusiasts, we embrace the imaginative world of Lego, where both kids and adults can experience the joy of </p>
+                <a href="movie2review.html" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+
+        <!-- Movie Review 3 (Drama) -->
+        <div class="col-md-4">
+            <div class="movie-card">
+                <img src="action anime.jpeg" alt="Movie 3 Poster" class="img-fluid equal-height-image">
+                <h3>Anime Action figures </h3>
+                <p> Anime Action Figures bring the captivating characters and stories of the anime world to life. At Anime Collectors Hub, we are passionate about the art of collecting and the intricacies of anime action figures.  </p>
+                <a href="movie3 review.html" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+
+    /* Custom CSS to make columns the same size */
+    .image-grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+        /* Custom CSS to make columns the same size */
+        .image-grid-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        /* Style for the modal content */
+        .modal-content {
+            background-color: #333;
+            color: #fff;
+        }
+        /* Style for the modal body */
+        .modal-body {
+            text-align: center;
+        }
+        /* Style for the modal title */
+        .modal-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        /* Style for the modal text */
+        .modal-body p {
+            font-size: 16px;
+        }
+        /* Style for the modal images */
+        .modal-body img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="latestmovies">Latest Toys</h1>
+        <div class="row image-grid">
+            <div class="col-md-4 image-grid-item">
+                <img src="action cars.jpeg" alt="Image 1" class="img-fluid" data-toggle="modal" data-target="#imageModal1">
+                <div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="action cars.jpeg" alt="Image 1" class="img-fluid">
+                                <h1>Action Cars</h1>
+                                <p>Action Car Toys offer an exhilarating world of play, combining the excitement of vehicles with imaginative adventures. At Action Car Playland, we're dedicated to celebrating the joy of action-packed car toys. Our team of car enthusiasts and toy experts provide valuable insights, reviews, and recommendations on the latest and greatest action car toys, from high-speed race cars to rugged off-road vehicles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 image-grid-item">
+                <img src="electronic games.jpeg" alt="Image 2" class="img-fluid" data-toggle="modal" data-target="#imageModal2">
+                <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="electronic games.jpeg" alt="Image 2" class="img-fluid">
+                                <h1>Electronic Games</h1>
+                                <p>Electronic Game Consoles take gaming to a whole new level, offering immersive experiences and entertainment for gamers of all ages. At Console Connect, we're passionate about the world of gaming and electronic game consoles. Our team of gaming enthusiasts and experts brings you the latest updates, reviews, and insights into the exciting realm of electronic gaming.
+
+                                    Explore the universe of game consoles, from the newest releases to classic systems, and stay informed about game libraries, accessories, and the ever-evolving technology that powers these consoles. Whether you're a casual gamer or a hardcore enthusiast, Console Connect is your go-to destination for all things related to electronic game consoles. Dive into the digital adventure and elevate your gaming experience to new heights.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 image-grid-item">
+                <img src="stuufed toys.jpeg" alt="Image 3" class="img-fluid" data-toggle="modal" data-target="#imageModal3">
+                <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="stuufed toys.jpeg" alt="Image 3" class="img-fluid">
+                                <h1>Stuffed toys</h1>
+                                <p> Stuffed toys, also known as plush toys or cuddly toys, are cherished companions for people of all ages. At Huggable Friends, we are dedicated to the world of stuffed toys, celebrating the comfort and joy they bring to our lives. Our team of stuffed toy enthusiasts and collectors provides a heartwarming and insightful perspective on a wide variety of plush companions.
+
+                                    Discover the enchanting world of stuffed toys, from classic teddy bears to whimsical characters, and explore their role in providing comfort, warmth, and endless smiles. Whether you're a child at heart or a collector, Huggable Friends is your destination for all things soft, cuddly, and full of love. Join us in celebrating the magic of stuffed toys and the enduring bonds they create.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above div structure for additional images -->
+        </div>
+        <!-- Repeat the above div structure for additional images -->
+    </div>
+</div>
+<main>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Contact Us</h3>
+                <p>Have questions or feedback? Feel free to get in touch with us.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Address</h4>
+                <p>madhura wada , It hill no 3 </p>
+                <p>vishakapatnam, india</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Email</h4>
+                <p>Email: contact@toyPlaza.com</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Phone</h4>
+                <p>Phone: 9032522052    </p>
+            </div>
+        </div>
+    </div>
+    <!-- Social Media Icons -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Follow Us</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
